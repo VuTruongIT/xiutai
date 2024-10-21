@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bowl-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.dice-container {
+    position: absolute;
+    top: 25px; /* Đảm bảo xúc xắc nằm ở giữa bát */
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1; /* Xúc xắc nằm dưới bát */
+}
+
+.dice {
+    font-size: 40px;
+    margin: 0 5px;
+    visibility: hidden; /* Xúc xắc sẽ ẩn khi mới bắt đầu */
+}
+
+.bowl {
+    width: 150px;
+    height: 150px;
+    background-color: #8B4513;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2; /* Bát sẽ nằm trên xúc xắc */
+    cursor: grab;
+}
+
+.bowl:active {
+    cursor: grabbing;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#current-money {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.money-display {
+    background-color: #FFD700;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#outcome {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+button.selected {
+    background-color: #FFA500; /* Màu cam cho nút đã chọn */
+    color: white;
+}
+

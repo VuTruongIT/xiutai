@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Xỉu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chơi Tài Xỉu</h1>
+        <div class="game">
+            <p>Chọn Tài (11-17) hoặc Xỉu (4-10)</p>
+            <input type="number" id="bet-amount" placeholder="Nhập tiền cược">
+            <button id="tai">Tài</button>
+            <button id="xiu">Xỉu</button>
+            <button id="reset">Reset</button>
+            <button id="withdraw">Rút tiền</button>
+        </div>
+        <div class="recharge-section">
+            <input type="number" id="recharge-amount" placeholder="Nhập số tiền cần nạp">
+            <button id="recharge">Nạp tiền</button>
+        </div>
+
+        <!-- Container cho bát và xúc xắc -->
+        <div class="bowl-container">
+            <div class="dice-container" id="dice-container">
+                <div class="dice" id="dice1">🎲</div>
+                <div class="dice" id="dice2">🎲</div>
+                <div class="dice" id="dice3">🎲</div>
+            </div>
+            <div class="bowl" id="bowl"></div> <!-- Bát úp -->
+        </div>
+
+        <div class="result">
+            <p id="dice-result">Xúc xắc: ?</p>
+            <p id="outcome">Kết quả: </p>
+            <p id="timer">Thời gian còn lại: 20 giây</p> <!-- Phần hiển thị bộ đếm thời gian -->
+        </div>
+        <div class="money-display">
+            <p id="current-money">Tiền gốc: 1000</p>
+            <p id="withdrawn-money">Số tiền đã rút: 0</p>
+            <p id="admin-money">Tiền của admin: 0</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
